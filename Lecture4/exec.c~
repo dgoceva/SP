@@ -1,0 +1,8 @@
+#include <stdio.h>
+#include <unistd.h>
+
+void main()
+{
+  execl("/bin/ls","ls","-l",0);
+  system("ls -l");
+}
